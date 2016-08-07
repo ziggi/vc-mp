@@ -1,0 +1,200 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\launch3.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\launch3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LAUNCH3_DIALOG DIALOGEX 0, 0, 267, 228
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "VC:MP dev-release 0.1b launcher"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Host Game",IDC_STATIC,7,104,253,45
+    LTEXT           "Use Server Configuration (make sure it has a password set)",
+                    IDC_STATIC,15,116,229,8
+    EDITTEXT        IDC_SERVER_CONFIG,15,127,170,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Start Server",IDC_START_SERVER,193,127,59,15
+    GROUPBOX        "Remote Admin Console",IDC_STATIC,7,154,253,64
+    LTEXT           "Server IP",IDC_STATIC,14,164,42,9
+    EDITTEXT        IDC_SERVER_IP_ADMIN,15,173,169,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SERVER_PORT_ADMIN,15,198,44,12,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,15,189,42,9
+    EDITTEXT        IDC_SERVER_PASS_ADMIN,64,198,120,12,ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC,64,189,70,9
+    PUSHBUTTON      "Start Rcon",IDC_BUTTON3,193,173,59,14
+    GROUPBOX        "Play VC:MP",IDC_STATIC,7,7,253,92
+    LTEXT           "Nickname",IDC_STATIC,15,19,165,8
+    EDITTEXT        IDC_NICK,15,28,168,12,ES_AUTOHSCROLL
+    LTEXT           "Server IP",IDC_STATIC,15,44,167,9
+    EDITTEXT        IDC_SERVER_IP,15,53,168,12,ES_AUTOHSCROLL
+    LTEXT           "Port",IDC_STATIC,15,69,73,8
+    EDITTEXT        IDC_PORT,15,78,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Launch Game",IDC_LAUNCH,192,24,62,15
+    PUSHBUTTON      "Exit",IDC_BUTTON2,192,42,62,14
+    LTEXT           "Server Password",IDC_STATIC,97,69,74,8
+    EDITTEXT        IDC_SERVER_PASSWORD,98,78,85,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Help",IDC_HELP_BUTTON,192,59,62,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "VC-MP launcher\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "launch3\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "vc-mp.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "launch3 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LAUNCH3_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\launch3.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
